@@ -1,13 +1,13 @@
 # 说明文档
 
-## `eva-cli`: 一个帮助你快速搭建和开发前端项目的 CLI
+## `eva-vue-cli`: 一个帮助你快速搭建和开发前端项目的 CLI
 
 > 想不起来其他名字，以这个命名吧~
 
 如何安装？
 
 ```shell
-npm install eva-cli -g
+npm install eva-vue-cli -g
 ```
 
 ## 创建项目
@@ -25,7 +25,7 @@ vue 项目模块已经帮你配置：
 创建项目
 
 ```shell
-eva-cli create your_project_name
+eva-vue-cli create your_project_name
 ```
 
 自动拉取项目模板、安装项目依赖、打开浏览器 `http://localhost:8080/`、自动启动项目
@@ -41,15 +41,15 @@ eva-cli create your_project_name
 ### 创建 Vue 组件：
 
 ```shell
-eva-cli addcpn YourComponentName # 例如eva-cli add NavBar，默认会存放到src/components文件夹中
-eva-cli addcpn YourComponentName -d src/pages/home # 也可以指定存放的具体文件夹
+eva-vue-cli addcpn YourComponentName # 例如eva-vue-cli add NavBar，默认会存放到src/components文件夹中
+eva-vue-cli addcpn YourComponentName -d src/pages/home # 也可以指定存放的具体文件夹
 ```
 
 ### 创建 Vue 页面，并配置路由
 
 ```shell
-eva-cli addpage YourPageName # 例如eva-cli addpage Home，默认会放到src/pages/home/Home.vue中，并且会创建src/page/home/router.js
-eva-cli addpage YourPageName -d src/views # 也可以指定文件夹，但需要手动集成路由
+eva-vue-cli addpage YourPageName # 例如eva-vue-cli addpage Home，默认会放到src/pages/home/Home.vue中，并且会创建src/page/home/router.js
+eva-vue-cli addpage YourPageName -d src/views # 也可以指定文件夹，但需要手动集成路由
 ```
 
 为什么会创建 router.js 文件：
@@ -71,8 +71,8 @@ const routes = files.keys().map((key) => {
 ### 创建 Vuex 子模块
 
 ```shell
-eva-cli addstore YourVuexChildModuleName # 例如eva-cli addstore home，默认会放到src/store/modules/home/index.js和types.js
-eva-cli addstore YourVuexChildModuleName -d src/vuex/modules # 也可以指定文件夹
+eva-vue-cli addstore YourVuexChildModuleName # 例如eva-vue-cli addstore home，默认会放到src/store/modules/home/index.js和types.js
+eva-vue-cli addstore YourVuexChildModuleName -d src/vuex/modules # 也可以指定文件夹
 ```
 
 创建完成后，不需要手动配置，已经动态将所有子模块集成进去：
@@ -99,14 +99,14 @@ files
 
 # Documentation
 
-## `eva-cli`: A CLI to help you quickly build and develop front-end projects
+## `eva-vue-cli`: A CLI to help you quickly build and develop front-end projects
 
-> Can't think of other names, so just use eva-cli~
+> Can't think of other names, so just use eva-vue-cli~
 
 How to install？
 
 ```shell
-npm install eva-cli -g
+npm install eva-vue-cli -g
 ```
 
 ## Create project
@@ -124,7 +124,7 @@ The vue project module has been configured for you:
 Create project
 
 ```shell
-eva-cli create your_project_name
+eva-vue-cli create your_project_name
 ```
 
 Automatically pull project templates, install project dependencies, open browsers, `http://localhost:8080/`and automatically start projects
@@ -140,15 +140,15 @@ Project development currently provides three functions:
 ### Create Vue components:
 
 ```shell
-addcpn YourComponentName eva-cli # example eva-cli add NavBar, the default will be stored in src / components folder
-eva-cli addcpn YourComponentName -d src / Pages and the / Home # specific file can also specify the destination folder
+addcpn YourComponentName eva-vue-cli # example eva-vue-cli add NavBar, the default will be stored in src / components folder
+eva-vue-cli addcpn YourComponentName -d src / Pages and the / Home # specific file can also specify the destination folder
 ```
 
 ### Create a Vue page and configure routing
 
 ```shell
-addPage YourPageName eva-cli # example eva-cli addpage Home, the default will put src / pages / home / Home.vue, and will create a src / Page / Home / router.js
-eva-cli addPage YourPageName -d src / views # You can also specify a folder , But need to integrate routing manually
+addPage YourPageName eva-vue-cli # example eva-vue-cli addpage Home, the default will put src / pages / home / Home.vue, and will create a src / Page / Home / router.js
+eva-vue-cli addPage YourPageName -d src / views # You can also specify a folder , But need to integrate routing manually
 ```
 
 Why is the router.js file created:
@@ -170,8 +170,8 @@ const routes = files.Keys().Map((key) => {
 ### Create Vuex submodule
 
 ```shell
-addstore YourVuexChildModuleName eva-cli # example eva-cli addstore home, the default will put src / store / modules / home / index.js and types.js
-eva-cli addstore YourVuexChildModuleName -d src / vuex / modules # You can also specify a folder
+addstore YourVuexChildModuleName eva-vue-cli # example eva-vue-cli addstore home, the default will put src / store / modules / home / index.js and types.js
+eva-vue-cli addstore YourVuexChildModuleName -d src / vuex / modules # You can also specify a folder
 ```
 
 After the creation is completed, no manual configuration is required, and all sub-modules have been dynamically integrated:
